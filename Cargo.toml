@@ -1,0 +1,18 @@
+[package]
+name = "s5proxy"
+version = "0.1.0"
+edition = "2021"
+description = "A small project for socket 5 proxy server"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.5"
+serde_derive = "1.0"
+tokio = { verion="1.0", features=["full"]}
+log = "0.4"
+pretty_env_logger = "0.4"
+byteorder = "1.3.4"
+clap = { version = "3.1.14", features = ["derive"] }
